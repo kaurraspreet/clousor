@@ -54,9 +54,9 @@ export default function Navbar () {
     }
   ]
   return (
-    <header className='bg-white w-full max-w-screen-2xl mx-auto'>
+    <header className='bg-white w-full py-6 lg:px-16 md:px-8 px-5 top-0 fixed z-40 shadow'>
       <nav
-        className='mx-auto flex w-full items-center justify-between py-6 lg:px-16 md:px-8 px-5'
+        className='mx-auto flex w-full container items-center justify-between '
         aria-label='Global'
       >
         <div className='flex lg:flex-1'>
@@ -101,7 +101,7 @@ export default function Navbar () {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className='fixed top-0 bottom-0 z-10 w-full h-full lg:backdrop-blur-none backdrop-blur-xl bg-brown-200/60 grid place-content-center'
+          className='fixed top-0 bottom-0 z-10 w-full h-full lg:backdrop-blur-none backdrop-blur-xl bg-[#ffffffc2] grid place-content-center'
         >
           <div className='lg:hidden' role='dialog' aria-modal='true'>
             <div className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto py-6 md:px-8 px-5'>
