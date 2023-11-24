@@ -49,12 +49,12 @@ export default function Navbar () {
     },
     {
       name: 'Blogs',
-      href: '/',
+      href: '/blogs',
       id: 'blog'
     }
   ]
   return (
-    <header className='bg-white w-full py-6 lg:px-16 md:px-8 px-5 top-0 fixed z-40 shadow'>
+    <header className='bg-white w-full py-6 lg:px-16 md:px-8 px-5 top-0 sticky z-40 shadow'>
       <nav
         className='mx-auto flex w-full container items-center justify-between '
         aria-label='Global'
@@ -90,7 +90,7 @@ export default function Navbar () {
         <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
           <Button
             text='Contact Us'
-            onClick={() => router.back()}
+            onClick={() => router.push('/contact-us')}
             className='gap-2 flex items-center bg-black text-white rounded-md font-semibold'
           />
         </div>
@@ -101,7 +101,7 @@ export default function Navbar () {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className='fixed top-0 bottom-0 z-10 w-full h-full lg:backdrop-blur-none backdrop-blur-xl bg-[#ffffffc2] grid place-content-center'
+          className='fixed top-0 left-0 bottom-0 z-10 w-full h-full lg:backdrop-blur-none backdrop-blur-xl bg-[#ffffffc2] grid place-content-center'
         >
           <div className='lg:hidden' role='dialog' aria-modal='true'>
             <div className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto py-6 md:px-8 px-5'>

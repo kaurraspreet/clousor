@@ -1,37 +1,37 @@
 'use client'
 
 import clsx from 'clsx'
-import React from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 
-type Props = {
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
   varient?: 'secondary' | 'primary'
   text: string
   size?: 'sm' | 'lg' | 'md'
   icon?: React.ReactNode
   iconPosition?: 'before' | 'after'
-  onClick: () => void
+
   disabled?: boolean
 }
 
 const Button = ({
-  onClick,
   text,
   varient,
   size,
   className,
   icon,
   iconPosition = 'before',
-  disabled
+  disabled,
+  ...rest
 }: Props) => {
   return (
     <button
-      onClick={onClick}
       className={clsx(
         'border border-black px-8 py-2 rounded-lg disabled:opacity-25 hover:bg-black duration-300 cursor-pointer hover:text-white',
         className
       )}
       disabled={disabled}
+      {...rest}
     >
       {iconPosition === 'before' && icon}
       {text}
