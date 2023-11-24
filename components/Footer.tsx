@@ -50,7 +50,7 @@ export default function Footer () {
   const additionallinks = [
     {
       name: 'FAQ',
-      href: '/',
+      href: '/faq',
       id: 'faq'
     },
     {

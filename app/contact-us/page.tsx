@@ -1,29 +1,20 @@
-import {
-  Email,
-  Phone,
-  HalfCircle,
-  DotShape1,
-  DotShape2
-} from '@/components/SvgIcon'
+import { HalfCircle, DotShape1, DotShape2 } from '@/components/SvgIcon'
 import ContactForm from '@/components/contact/form'
 import ContactBar from '@/components/contact/Contactbar'
 import OurProcess from '@/components/contact/TimeLine'
+import CommonHeader from '@/components/CommonHeader'
 
 export default function Contact () {
   return (
     <>
       <section>
-        <div className='bg-black pt-20 pb-40 lg:px-16 md:px-8 px-5'>
-          <div className='container mx-auto text-white'>
-            <h3 className='font-semibold text-5xl pb-2'>Get in touch</h3>
-            <p className='text-lg font-light'>
-              We would love to hear from you.
-            </p>
-          </div>
-        </div>
+        <CommonHeader
+          title='Get in touch'
+          subtitle='We would love to hear from you'
+          className='pb-40'
+        />
         <ContactBar />
 
-        {/* form section start */}
         <div className='relative z-10 overflow-hidden bg-white dark:bg-dark py-20 lg:py-[120px] lg:px-16 md:px-8 px-5'>
           <div className='container mx-auto'>
             <div className='flex flex-wrap -mx-4 '>
