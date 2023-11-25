@@ -41,27 +41,26 @@ export default function Faq () {
   ]
   return (
     <>
-      <CommonHeader title='FAQ' subtitle='Any Questions? Look Here' />
-
-      <div className='max-w-screen-lg mx-auto px-5 bg-white'>
-        <div className='grid divide-y divide-neutral-200 mx-auto my-12'>
-          {faq.map(({ question, answer, id }) => (
-            <div className='py-5' key={id}>
-              <details className='group'>
-                <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
-                  <span> {question}</span>
-                  <span className='transition group-open:rotate-180'>
-                    <SoftChevronIcocn className='h-6 w-6 fill-black' />
-                  </span>
-                </summary>
-                <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>
-                  {answer}
-                </p>
-              </details>
-            </div>
-          ))}
+        <CommonHeader title='FAQ' subtitle='Any Questions? Look Here' />
+        <div className='max-w-screen-lg mx-auto px-5 bg-white lg:px-16 md:px-8 pb-20'>
+          <div className='grid divide-y divide-neutral-200 mx-auto my-12'>
+            {faq.map(({ question, answer, id }) => (
+              <div className='py-5' key={id}>
+                <details className='group'>
+                  <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
+                    <span> {question}</span>
+                    <span className='transition group-open:rotate-180'>
+                      <SoftChevronIcocn className='h-6 w-6 fill-black' />
+                    </span>
+                  </summary>
+                  <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>
+                    {answer}
+                  </p>
+                </details>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
     </>
   )
 }

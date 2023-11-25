@@ -38,7 +38,7 @@ export default function ContactForm () {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className='flex flex-col gap-4 mx-8'
+      className='flex flex-col gap-4 mx-8 lg:mx-0 xl:mx-8'
     >
       <Input
         htmlFor='name'
@@ -78,12 +78,12 @@ export default function ContactForm () {
         {...register('message')}
         placeholder='Enter message'
         rows={4}
-        className=' border-none p-3.5 px-3.5 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full '
+        className=' border-none p-3.5 px-3.5 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full min-h-[3rem]'
       ></textarea>
       <Button
         type='submit'
         text='Submit'
-        className='-mb-10 mx-auto w-fit mt-4 bg-black text-white'
+        className='md:-mb-10 mb-8 mx-auto w-fit mt-4 bg-black text-white'
       />
     </form>
   )

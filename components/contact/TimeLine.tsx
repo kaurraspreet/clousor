@@ -2,8 +2,7 @@ export default function OurProcess () {
   return (
     <div className='space-y-6'>
       <h3 className='font-bold text-7xl text-black'>
-        What will be
-        <br /> next step?
+        What will be next step?
       </h3>
       <p className='text-xl'>
         You are one step closer to build your perfect product

@@ -22,7 +22,7 @@ export default function Navbar () {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 1023) {
-        closeMobileMenu();
+        closeMobileMenu()
       }
     }
     window.addEventListener('resize', handleResize)

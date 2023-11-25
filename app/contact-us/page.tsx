@@ -7,7 +7,7 @@ import CommonHeader from '@/components/CommonHeader'
 export default function Contact () {
   return (
     <>
-      <section>
+      <section className='mb-10 md:mb-12 lg:mb-16'>
         <CommonHeader
           title='Get in touch'
           subtitle='We would love to hear from you'
@@ -15,17 +15,17 @@ export default function Contact () {
         />
         <ContactBar />
 
-        <div className='relative z-10 overflow-hidden bg-white dark:bg-dark py-20 lg:py-[120px] lg:px-16 md:px-8 px-5'>
+        <div className='relative z-10 overflow-hidden bg-white dark:bg-dark py-10 lg:py-20 lg:px-16 md:px-8 md:pt-0 px-5'>
           <div className='container mx-auto'>
-            <div className='flex flex-wrap -mx-4 '>
-              <div className='w-full px-4 lg:w-1/2 xl:w-6/12'>
-                <div className='container px-6 mx-auto'>
+            <div className='flex flex-wrap -mx-4 gap-6 lg:gap-0'>
+              <div className='w-full px-4 lg:w-1/2 xl:w-6/12 lg:pr-20'>
+                {/* <div className='container px-6 mx-auto'> */}
                   <OurProcess />
-                </div>
+                {/* </div> */}
               </div>
               <div className='w-full px-4 lg:w-1/2 xl:w-6/12'>
-                <div className='relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12 mr-12 space-y-12'>
-                  <h2 className='mx-8 text-5xl font-semibold'>
+                <div className='relative lg:p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12 mr-12 space-y-12'>
+                  <h2 className='mx-8 lg:mx-0 xl:mx-8 text-3xl lg:text-5xl font-semibold pt-8 lg:pt-0'>
                     Contact us and unleash your idea
                   </h2>
                   <ContactForm />
