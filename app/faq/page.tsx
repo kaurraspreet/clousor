@@ -41,7 +41,7 @@ export default function Faq () {
   ]
   return (
     <>
-        <CommonHeader title='FAQ' subtitle='Any Questions? Look Here' />
+        <CommonHeader title='FAQs Unplugged' subtitle='Discover Answers to Common Queries About Our Services, Technologies, and Support' />
         <div className='max-w-screen-lg mx-auto px-5 bg-white lg:px-16 md:px-8 pb-20'>
           <div className='grid divide-y divide-neutral-200 mx-auto my-12'>
             {faq.map(({ question, answer, id }) => (
