@@ -55,12 +55,12 @@ export default function Footer () {
     },
     {
       name: 'Terms & Conditions',
-      href: '/',
+      href: '/terms-conditions',
       id: 'terms-conditions'
     },
     {
       name: 'Privacy Policy',
-      href: '/',
+      href: '/privacy-policy',
       id: 'privacy-policy'
     }
   ]
@@ -84,7 +84,7 @@ export default function Footer () {
     },
     {
       name: 'Instagram',
-      href: '/instagram',
+      href: 'https://www.instagram.com/clousor_',
       id: 'instagram',
       icon: (
         <Instagram className='fill-gray-400 inline hover:fill-white w-7 h-7 ml-2' />
@@ -92,7 +92,7 @@ export default function Footer () {
     },
     {
       name: 'Twitter',
-      href: '/twitter',
+      href: 'https://twitter.com/clousor_',
       id: 'twitter',
       icon: (
         <Twitter className='fill-gray-400 inline hover:fill-white w-7 h-7 ml-2' />
